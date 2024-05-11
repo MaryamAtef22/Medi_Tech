@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediTech</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <!-- START MAIN -->
+
+    <nav class="navbar navbar-expand-lg sticky-top ">
+      <div class="container">
+          <i class="fa-solid fa-stethoscope icon pe-4"></i>
+          <h3 class="first-text">MediTech</h3>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" 
+        aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center text-center  " id="main">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link p-lg-3 " aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" href="schedule.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3 active text-decoration-underline" href="Patients.html">Patients</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+        <div class="nav-icon">
+          <i class="fa-regular fa-user pe-2" ></i>
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </div>
+      </div>
+    </nav>
+    <!--END MAIN -->
+    <!-- START Patient Details -->
+    <div class="container">
+        <div class="sec-one mt-5 mb-5">
+            <p class="ps-4 paragragh-top"><b>Patient/</b><span >Mohamed</span></p>
+            <div class="patient-details ">
+                <h4 class="text-lowercase">Patient Details</h4>
+                <div class="row-one d-flex">
+                    <h5 class="pe-3">Full Name</h5>
+                    <p class="pe-3">Mohamed Ebrahim</p>
+                    <h5 class="pe-3">Age</h5>
+                    <p>21</p>
+                </div>
+                <div class="row-two d-flex">
+                  <h5 class="pe-3">Previous Diagnoses</h5>
+                  <p>Kidney problems and lungs pain with hard breathin</p>
+                  
+              </div>
+
+            </div>
+        </div>
+        <div class="sec-two mb-5">
+          <h4>Prescriptions <i class="fa-solid fa-circle-plus "></i></h4>
+          <div class="prescriptions">
+            <div class="content-one">
+              <h4>Medicine 
+                <!-- Button trigger modal -->
+              <button type="button" class="btn-icon bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <i class="fa-solid fa-circle-plus"></i>
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-center " id="staticBackdropLabel">Medicine Details</h5>
+                    </div>
+                    <div class="modal-body">
+                      <div class="text-center ">
+                        <div class="input-one">
+                          <label for="name" class="pb-4">
+                            Name
+                            <input type="text"id="name" name="name" value="" class="bg-transparent ms-3 ">
+                          </label>
+                        </div>
+
+                        <div class="input-two">
+                          <label for="dose" class="">
+                            Dose
+                            <input type="text"id="dose" name="dose" value="" class="bg-transparent ms-4 ">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn me-4">Applay</button>
+                      <button type="button" class="btn ms-4 " data-bs-dismiss="modal">Cancle</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </h4>
+              <div class="info-row-one d-flex  ">
+                <div class="top-left col-5  bg-white d-flex me-4 p-3 mb-2 rounded-2  justify-content-center align-items-center">
+                  <div class="info-box">
+                  <div class="info-top d-flex  ">
+                    <h5 class="pe-3">Medicine Name</h5>
+                      <p class="pe-3">Acnetame Vitamin Supplements</p>
+                  </div>
+                  <div class="info-but d-flex ">
+                    <h5 class="pe-3">Medicine Dose</h5>
+                      <p class="pe-3">3 Times a day</p>
+                  </div>
+                </div>
+                
+                <div class="box-icon p-2  ms-5 me-3  trashstyle  ">
+                  <i class="fa-solid fa-trash"></i>
+                  </div>
+                </div>
+                <div class="top-right  col-5 bg-white d-flex me-2 p-3 mb-2  rounded-2 justify-content-center align-items-center ">
+                  <div class="info-box">
+                  <div class="info-top d-flex">
+                    <h5 class="pe-3">Medicine Name</h5>
+                      <p class="pe-3">Acnetame Vitamin Supplements</p>
+                  </div>
+                  <div class="info-but d-flex">
+                    <h5 class="pe-3">Medicine Dose</h5>
+                      <p class="pe-3">3 Times a day</p>
+                  </div>
+                </div>
+                
+                <div class="box-icon p-2   ms-5 me-3 trashstyle ">
+                  <i class="fa-solid fa-trash"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-row-two d-flex ">
+                <div class="top-left col-5 bg-white d-flex me-4 p-3 mb-2 rounded-2 justify-content-center align-items-center">
+                  <div class="info-box">
+                  <div class="info-top d-flex">
+                    <h5 class="pe-3">Medicine Name</h5>
+                      <p class="pe-3">Acnetame Vitamin Supplements</p>
+                  </div>
+                  <div class="info-but d-flex">
+                    <h5 class="pe-3">Medicine Dose</h5>
+                      <p class="pe-3">3 Times a day</p>
+                  </div>
+                </div>
+                
+                <div class="box-icon p-2 ms-5 me-3   trashstyle ">
+                  <i class="fa-solid fa-trash"></i>
+                  </div>
+                </div>
+                <div class="top-right col-5 bg-white d-flex me-4 p-3 mb-2 rounded-2  justify-content-center align-items-center">
+                  <div class="info-box">
+                  <div class="info-top d-flex">
+                    <h5 class="pe-3">Medicine Name</h5>
+                      <p class="pe-3">Acnetame Vitamin Supplements</p>
+                  </div>
+                  <div class="info-but d-flex">
+                    <h5 class="pe-3">Medicine Dose</h5>
+                      <p class="pe-3">3 Times a day</p>
+                  </div>
+                </div>
+                
+                <div class="box-icon p-2 ms-5 me-3   trashstyle">
+                  <i class="fa-solid fa-trash"></i>
+                  </div>
+                </div>
+              </div>
+              
+              
+            </div>
+            <h4 class="mt-5">Diagnoses 
+              
+              <!-- Button trigger modal -->
+              <button type="button" class="btn-icon bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop-2">
+                <i class="fa-solid fa-circle-plus"></i>
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop-2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content2">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Diagnoses</h5>
+                    </div>
+                    <div class="modal-body">
+                      <textarea name="" id="dose-text" class="bg-transparent  diagnosetext" ></textarea>
+                      <!-- <input type="text" id="dose-text" value="" class="bg-transparent  diagnosetext"> -->
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn">Applay</button>
+                      <button type="button" class="btn " data-bs-dismiss="modal">Cancle</button>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </h4>
+            <div class="info-but bg-white d-flex p-2 col-6">
+              <div class="but-left ">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pharetra purus  ultricies, aliquet orci pretium, blandit ante. Aliquam non semper metus, non efficitur eros. Curabitur sed quam dignissim, elementum dui vitae, euismod purus. Aenean lacus purus, condimentum ut neque condimentum, elementum vestibulum ante. Proin  nec commodo leo. Morbi venenatis purus vitae nibh porttitor, interdum vulputate nisl  tempus. Fusce dui dui.</p>
+
+              </div>
+              <div class="icon-del-add align-content-center ps-3 ">
+                <div class="box-icon p-2 rounded-circle mb-1">
+                <i class="fa-solid fa-trash"></i>
+                </div>
+                <div class="box-icon  p-2 rounded-circle">
+                  <i class="fa-solid fa-pen"></i>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          
+
+
+        </div>
+        <div class="sec-3th mb-5">
+          <div class="prescriptions mt-5 ">
+            <h4 class="text-center pt-3"><b>Prescriptions#</b></h4>
+            <div class="content-one">
+              <h4>Medicine <i class="fa-solid fa-circle-plus"></i></h4>
+              <div class="info-row-one d-flex ">
+                <div class="top-left col-5 bg-white d-flex me-4 p-3 mb-2 rounded-2">
+                  <div class="info-box">
+                  <div class="info-top d-flex">
+                    <h5 class="pe-3">Medicine Name</h5>
+                      <p class="pe-3">Acnetame Vitamin Supplements</p>
+                  </div>
+                  <div class="info-but d-flex">
+                    <h5 class="pe-3">Medicine Dose</h5>
+                      <p class="pe-3">3 Times a day</p>
+                  </div>
+                </div>
+                
+                
+                </div>
+                <div class="top-right col-5 bg-white d-flex me-4 p-3 mb-2 rounded-2">
+                  <div class="info-box">
+                  <div class="info-top d-flex">
+                    <h5 class="pe-3">Medicine Name</h5>
+                      <p class="pe-3">Acnetame Vitamin Supplements</p>
+                  </div>
+                  <div class="info-but d-flex">
+                    <h5 class="pe-3">Medicine Dose</h5>
+                      <p class="pe-3">3 Times a day</p>
+                  </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="info-row-two d-flex ">
+                <div class="top-left col-5 bg-white d-flex me-4 p-3 rounded-2">
+                  <div class="info-box">
+                  <div class="info-top d-flex">
+                    <h5 class="pe-3">Medicine Name</h5>
+                      <p class="pe-3">Acnetame Vitamin Supplements</p>
+                  </div>
+                  <div class="info-but d-flex">
+                    <h5 class="pe-3">Medicine Dose</h5>
+                      <p class="pe-3">3 Times a day</p>
+                  </div>
+                </div>
+                </div>
+                <div class="top-right col-5 bg-white d-flex me-4 p-3  rounded-2">
+                  <div class="info-box">
+                  <div class="info-top d-flex">
+                    <h5 class="pe-3">Medicine Name</h5>
+                      <p class="pe-3">Acnetame Vitamin Supplements</p>
+                  </div>
+                  <div class="info-but d-flex">
+                    <h5 class="pe-3">Medicine Dose</h5>
+                      <p class="pe-3">3 Times a day</p>
+                  </div>
+                </div>
+                </div>
+              </div>
+              
+              
+            </div>
+            <h4 class="mt-5">Diagnoses <i class="fa-solid fa-circle-plus"></i></h4>
+            <div class="info-but bg-white d-flex p-2  col-6">
+              <div class="but-left ">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pharetra purus <br> ultricies, aliquet orci pretium, blandit ante. Aliquam non semper metus, non efficitur <br> eros. Curabitur sed quam dignissim, elementum dui vitae, euismod purus. Aenean <br> lacus purus, condimentum ut neque condimentum, elementum vestibulum ante. Proin <br> nec commodo leo. Morbi venenatis purus vitae nibh porttitor, interdum vulputate nisl <br> tempus. Fusce dui dui.</p>
+
+              </div>
+            </div>
+
+          </div>
+          
+
+
+        </div>
+    </div>
+    <!-- END Patient Details -->
+
+    <!-- START FOOTER -->
+    <footer>
+        <div class="container  text-center text-md-start text-white ">
+            <div class="row">
+                <div class=" col-md-6 col-lg-5 ">
+                    <div class="logo d-flex">
+                        <i class="fa-solid fa-stethoscope icon pe-4"></i>
+                    <h3>MediTech</h3>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <div class="links">
+                        <h5>Company</h5>
+                        <ul class="list-unstyled lh-lg">
+                            <li>About</li>
+                            <li>Contact Us</li>
+                            <li>Where to find us?</li>
+                            
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="links">
+                        <h5>Categories</h5>
+                        <ul class="list-unstyled lh-lg">
+                            <li>Join us as a doctor</li>
+                            <li>Pricing</li>
+                            
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <div class="links">
+                        <ul class="list-unstyled lh-lg">
+                            <li>Downloads</li>
+                            <li>Our Doctors</li>
+                            <li>Patients Reviews</li>
+                            
+                        </ul>
+                    </div>
+
+
+                </div>
+               
+                
+
+
+            </div>
+            <hr>
+            <div class="row  d-flex  text-white">
+                <div class="social col-lg-9  ps-5">
+                    <i class="fa-brands fa-whatsapp pe-3 "></i>
+                    <i class="fa-brands fa-facebook-f "></i>
+                </div>
+                <div class="links-right col-lg-3 ">
+                    <ul class="list-unstyled lh-lg d-flex ">
+                        <li class="pe-3">privacy policy</li>
+                        
+                        <li>Terms and Conditions</li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+   
+   
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

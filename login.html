@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediTech</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<bod>
+        
+    <!-- START LOGIN -->
+    
+        <div class="row-login d-flex  " >
+            <form action="https://meditech20240428213036.azurewebsites.net/api/Account/Login" class="login-form" method="POST">
+                <div class="cotent-center  ">
+                    
+                    <h1 class="tittel  fa-3x"> <i class="fas  fa-stethoscope pe-4 "></i>MediTech</h1>
+                    <p class="text-left pb-3 ">Log in to your Account </p>
+                    <div class="input-field mb-3 pt-1 pb-1">
+                            <i class="fas fa-envelope ps-2 pe-2"></i>
+                            <input type="email" name="email" class="box" placeholder="Email"  >
+                    </div>
+                    <div class="input-field mb-3  pt-1 pb-1">
+                        <i class="fas fa-lock ps-2 pe-2 "></i>
+                        <input type="password" class="box" name="password" placeholder="Password" >
+                        <span onclick="showPassword(this)" class="eye-pass  position-absolute "><i class="fas fa-eye pe-2"></i></span>
+                        <script>
+                            function showPassword(elem){
+                                let myInput = elem.parentElement.querySelector('input');
+                                if(myInput.type == 'text'){
+                                    myInput.type = 'password'
+                                }else if(myInput.type == 'password'){
+                                    myInput.type = 'text'
+                                }
+                              
+                               
+                            }
+                        </script>
+                    </div>
+                    <div class="check  mt-4 mb-5 ">
+                        <input type="checkbox"  value="Remember me">
+                        <label for="">Remember me</label>
+                    </div>
+                    
+                    <input type="submit" value="login" id="submit" class=" pt-1 pb-1" >
+                </div>
+            </form>
+            <div class="content-login  ">
+                <div class="content-login-top text-center ">
+                    <img src="./images-login/Doctor.png" alt="Doctor"  >
+
+                </div>
+                
+                <p class="text-right">Connect with every application  <br> <i class="fas fa-heart-pulse fa-2x  pt-2"></i></p>
+                
+            </div>
+        </div>
+      
+    <!-- </div> -->
+    <!-- END LOGIN -->
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script> 
+    <script src="js/main.js"></script>
+</body>
+</html>

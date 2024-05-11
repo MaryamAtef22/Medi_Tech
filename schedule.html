@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediTech</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+</head>
+<body>
+     <!-- START MAIN -->
+     <nav class="navbar navbar-expand-lg sticky-top ">
+      <div class="container">
+          <i class="fa-solid fa-stethoscope icon pe-4"></i>
+          <h3 class="first-text">MediTech</h3>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" 
+        aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center text-center  " id="main">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link p-lg-3 " aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3 active text-decoration-underline" href="schedule.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" href="">Patients</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+        <div class="nav-icon">
+          <i class="fa-regular fa-user pe-2"></i>
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </div>
+      </div>
+    </nav>
+    <!--END MAIN -->
+    <!-- START SCHEDULE-SECTION -->
+    <div class="container " id="tabs">
+       <div class="  pt-5"> 
+            <h3 class="fw-bold">Schedule</h3>
+            <div class="days d-flex   mt-5 mb-5 ">
+              
+              <ul >
+                <li >
+                  <a href="#tabs-1" class="text-decoration-none col-3 ">
+                    <p>Saturday</p>
+                    <p>14/9</p> 
+                    <p>Appointments</p>
+                    <p>10</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#tabs-2" class="text-decoration-none col-3 ">
+                    <p>Saturday</p>
+                    <p>14/9</p>
+                    <p>Appointments</p>
+                    <p>10</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#tabs-3" class="text-decoration-none col-3">
+                    <p>Saturday</p>
+                    <p>14/9</p>
+                    <p>Appointments</p>
+                    <p>10</p>
+                  </a>
+
+                </li>
+                <li>
+                  <a href="#tabs-4" class="text-decoration-none col-3">
+                    <p>Saturday</p>
+                    <p>14/9</p>
+                    <p>Appointments</p>
+                    <p>10</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#tabs-5" class="text-decoration-none col-3">
+                    <p>Saturday</p>
+                    <p>14/9</p>
+                    <p>Appointments</p>
+                    <p>10</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#tabs-6" class="text-decoration-none col-3">
+                    <p>Saturday</p>
+                    <p>14/9</p>
+                    <p>Appointments</p>
+                    <p>10</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#tabs-7" class="text-decoration-none col-3">
+                    <p>Saturday</p>
+                    <p>14/9</p>
+                    <p>Appointments</p>
+                    <p>10</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            
+        <div class="section-two pt-5" > 
+          <h3 class="fw-bold">The Day Patients</h3>
+          <div id="tabs-1">
+            <table class="table table-bordered mt-5 mb-5 "  >
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col" class="fw-bold">Patient Name</th>
+                  <th scope="col" class="fw-bold">Patient Status</th>
+                  <th scope="col" class="fw-bold">Appointment Type</th>
+                </tr>
+                
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="fw-bold">#1</th>
+                  <td ><button id="button1" class="border-0 bg-white">Mohamed</button></td>
+                  <td>Treadted</td>
+                  <td>consultation</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#2</th>
+                  <td ><button id="button2" class="border-0 bg-white">Mohamed</button></td>
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#3</th>
+                  <td ><button id="button3" class="border-0 bg-white">Mohamed</button></td>
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#4</th>
+                  <td ><button id="button4" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#5</th>
+                  <td ><button id="button5" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#6</th>
+                  <td ><button id="button6" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#7</th>
+                  <td ><button id="button7" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                <tr>
+                    <th scope="row"class="fw-bold">#8</th>
+                    <td ><button id="button8" class="border-0 bg-white">Mohamed</button></td>
+
+                    <td>Under Treatment</td>
+                    <td>Examination</td>
+                </tr>
+                <tr>
+                    <th scope="row"class="fw-bold">#9</th>
+                    <td ><button id="button9" class="border-0 bg-white">Mohamed</button></td>
+
+                    <td>Under Treatment</td>
+                    <td>Examination</td>
+                </tr>
+                <tr>
+                    <th scope="row"class="fw-bold">#10</th>
+                    <td ><button id="button10" class="border-0 bg-white">Mohamed</button></td>
+
+                    <td>Under Treatment</td>
+                    <td>Examination</td>
+                </tr>
+  
+              </tbody>
+              
+  
+              
+              </table>
+          </div>
+          <div id="tabs-2">
+            <table class="table table-bordered mt-5 mb-5 "  >
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col" class="fw-bold">Patient Name</th>
+                  <th scope="col" class="fw-bold">Patient Status</th>
+                  <th scope="col" class="fw-bold">Appointment Type</th>
+                </tr>
+                
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="fw-bold">#1</th>
+                  <td > <a href="Patients.html/1" class="border-0 bg-white">Mai</a> </td>
+                  <td>Treadted</td>
+                  <td>consultation</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#2</th>
+                  <td ><button id="buttonb" class="border-0 bg-white">Mohamed</button></td>
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#3</th>
+                  <td ><button id="buttonc" class="border-0 bg-white">Mohamed</button></td>
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#4</th>
+                  <td ><button id="buttond" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#5</th>
+                  <td ><button id="buttone" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#6</th>
+                  <td ><button id="buttonf" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#7</th>
+                  <td ><button id="buttong" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                <tr>
+                    <th scope="row"class="fw-bold">#8</th>
+                    <td ><button id="buttonh" class="border-0 bg-white">Mohamed</button></td>
+
+                    <td>Under Treatment</td>
+                    <td>Examination</td>
+                </tr>
+                <tr>
+                    <th scope="row"class="fw-bold">#9</th>
+                    <td ><button id="buttoni" class="border-0 bg-white">Mohamed</button></td>
+
+                    <td>Under Treatment</td>
+                    <td>Examination</td>
+                </tr>
+                <tr>
+                    <th scope="row"class="fw-bold">#10</th>
+                    <td ><button id="buttonj" class="border-0 bg-white">Mohamed</button></td>
+
+                    <td>Under Treatment</td>
+                    <td>Examination</td>
+                </tr>
+  
+              </tbody>
+              
+  
+              
+              </table>
+          </div>
+          <div id="tabs-3">
+            <table class="table table-bordered mt-5 mb-5 "  >
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col" class="fw-bold">Patient Name</th>
+                  <th scope="col" class="fw-bold">Patient Status</th>
+                  <th scope="col" class="fw-bold">Appointment Type</th>
+                </tr>
+                
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="fw-bold">#1</th>
+                  <td ><button id="buttonaa" class="border-0 bg-white">Ali</button></td>
+                  <td>Treadted</td>
+                  <td>consultation</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#2</th>
+                  <td ><button id="buttonbb" class="border-0 bg-white">Mohamed</button></td>
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#3</th>
+                  <td ><button id="buttoncc" class="border-0 bg-white">Mohamed</button></td>
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#4</th>
+                  <td ><button id="buttondd" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#5</th>
+                  <td ><button id="buttonee" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#6</th>
+                  <td ><button id="buttonff" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#7</th>
+                  <td ><button id="buttongg" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                <tr>
+                    <th scope="row"class="fw-bold">#8</th>
+                    <td ><button id="buttonhh" class="border-0 bg-white">Mohamed</button></td>
+
+                    <td>Under Treatment</td>
+                    <td>Examination</td>
+                </tr>
+                <tr>
+                    <th scope="row"class="fw-bold">#9</th>
+                    <td ><button id="buttonii" class="border-0 bg-white">Mohamed</button></td>
+
+                    <td>Under Treatment</td>
+                    <td>Examination</td>
+                </tr>
+                <tr>
+                    <th scope="row"class="fw-bold">#10</th>
+                    <td ><button id="buttonjj" class="border-0 bg-white">Mohamed</button></td>
+
+                    <td>Under Treatment</td>
+                    <td>Examination</td>
+                </tr>
+  
+              </tbody>
+              
+  
+              
+              </table>
+          </div>
+          <div id="tabs-4">
+            <table class="table table-bordered mt-5 mb-5 "  >
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col" class="fw-bold">Patient Name</th>
+                  <th scope="col" class="fw-bold">Patient Status</th>
+                  <th scope="col" class="fw-bold">Appointment Type</th>
+                </tr>
+                
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="fw-bold">#1</th>
+                  <td ><button id="button1" class="border-0 bg-white">Omer</button></td>
+                  <td>Treadted</td>
+                  <td>consultation</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#2</th>
+                  <td ><button id="button2" class="border-0 bg-white">Mohamed</button></td>
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#3</th>
+                  <td ><button id="button3" class="border-0 bg-white">Mohamed</button></td>
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#4</th>
+                  <td ><button id="button4" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#5</th>
+                  <td ><button id="button5" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#6</th>
+                  <td ><button id="button6" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#7</th>
+                  <td ><button id="button7" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                <tr>
+                    <th scope="row"class="fw-bold">#8</th>
+                    <td ><button id="button8" class="border-0 bg-white">Mohamed</button></td>
+
+                    <td>Under Treatment</td>
+                    <td>Examination</td>
+                </tr>
+                <tr>
+                    <th scope="row"class="fw-bold">#9</th>
+                    <td ><button id="button9" class="border-0 bg-white">Mohamed</button></td>
+
+                    <td>Under Treatment</td>
+                    <td>Examination</td>
+                </tr>
+                <tr>
+                    <th scope="row"class="fw-bold">#10</th>
+                    <td ><button id="button10" class="border-0 bg-white">Mohamed</button></td>
+
+                    <td>Under Treatment</td>
+                    <td>Examination</td>
+                </tr>
+  
+              </tbody>
+              
+  
+              
+              </table>
+          </div>
+          <div id="tabs-5">
+            <table class="table table-bordered mt-5 mb-5 "  >
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col" class="fw-bold">Patient Name</th>
+                  <th scope="col" class="fw-bold">Patient Status</th>
+                  <th scope="col" class="fw-bold">Appointment Type</th>
+                </tr>
+                
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="fw-bold">#1</th>
+                  <td ><button id="button1" class="border-0 bg-white">Mona</button></td>
+                  <td>Treadted</td>
+                  <td>consultation</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#2</th>
+                  <td ><button id="button2" class="border-0 bg-white">Mohamed</button></td>
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#3</th>
+                  <td ><button id="button3" class="border-0 bg-white">Mohamed</button></td>
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#4</th>
+                  <td ><button id="button4" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#5</th>
+                  <td ><button id="button5" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#6</th>
+                  <td ><button id="button6" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#7</th>
+                  <td ><button id="button7" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                <tr>
+                    <th scope="row"class="fw-bold">#8</th>
+                    <td ><button id="button8" class="border-0 bg-white">Mohamed</button></td>
+
+                    <td>Under Treatment</td>
+                    <td>Examination</td>
+                </tr>
+                <tr>
+                    <th scope="row"class="fw-bold">#9</th>
+                    <td ><button id="button9" class="border-0 bg-white">Mohamed</button></td>
+
+                    <td>Under Treatment</td>
+                    <td>Examination</td>
+                </tr>
+                <tr>
+                    <th scope="row"class="fw-bold">#10</th>
+                    <td ><button id="button10" class="border-0 bg-white">Mohamed</button></td>
+
+                    <td>Under Treatment</td>
+                    <td>Examination</td>
+                </tr>
+  
+              </tbody>
+              
+  
+              
+              </table>
+          </div>
+          <div id="tabs-6">
+            <table class="table table-bordered mt-5 mb-5 "  >
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col" class="fw-bold">Patient Name</th>
+                  <th scope="col" class="fw-bold">Patient Status</th>
+                  <th scope="col" class="fw-bold">Appointment Type</th>
+                </tr>
+                
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="fw-bold">#1</th>
+                  <td ><button id="button1" class="border-0 bg-white">Maryam</button></td>
+                  <td>Treadted</td>
+                  <td>consultation</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#2</th>
+                  <td ><button id="button2" class="border-0 bg-white">Mohamed</button></td>
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#3</th>
+                  <td ><button id="button3" class="border-0 bg-white">Mohamed</button></td>
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#4</th>
+                  <td ><button id="button4" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#5</th>
+                  <td ><button id="button5" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#6</th>
+                  <td ><button id="button6" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#7</th>
+                  <td ><button id="button7" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                <tr>
+                    <th scope="row"class="fw-bold">#8</th>
+                    <td ><button id="button8" class="border-0 bg-white">Mohamed</button></td>
+
+                    <td>Under Treatment</td>
+                    <td>Examination</td>
+                </tr>
+                <tr>
+                    <th scope="row"class="fw-bold">#9</th>
+                    <td ><button id="button9" class="border-0 bg-white">Mohamed</button></td>
+
+                    <td>Under Treatment</td>
+                    <td>Examination</td>
+                </tr>
+                <tr>
+                    <th scope="row"class="fw-bold">#10</th>
+                    <td ><button id="button10" class="border-0 bg-white">Mohamed</button></td>
+
+                    <td>Under Treatment</td>
+                    <td>Examination</td>
+                </tr>
+  
+              </tbody>
+              
+  
+              
+              </table>
+          </div>
+          <div id="tabs-7">
+            <table class="table table-bordered mt-5 mb-5 "  >
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col" class="fw-bold">Patient Name</th>
+                  <th scope="col" class="fw-bold">Patient Status</th>
+                  <th scope="col" class="fw-bold">Appointment Type</th>
+                </tr>
+                
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="fw-bold">#1</th>
+                  <td ><button id="button1" class="border-0 bg-white">Nouran</button></td>
+                  <td>Treadted</td>
+                  <td>consultation</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#2</th>
+                  <td ><button id="button2" class="border-0 bg-white">Mohamed</button></td>
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#3</th>
+                  <td ><button id="button3" class="border-0 bg-white">Mohamed</button></td>
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#4</th>
+                  <td ><button id="button4" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#5</th>
+                  <td ><button id="button5" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#6</th>
+                  <td ><button id="button6" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-bold">#7</th>
+                  <td ><button id="button7" class="border-0 bg-white">Mohamed</button></td>
+
+                  <td>Under Treatment</td>
+                  <td>Examination</td>
+                </tr>
+                <tr>
+                <tr>
+                    <th scope="row"class="fw-bold">#8</th>
+                    <td ><button id="button8" class="border-0 bg-white">Mohamed</button></td>
+
+                    <td>Under Treatment</td>
+                    <td>Examination</td>
+                </tr>
+                <tr>
+                    <th scope="row"class="fw-bold">#9</th>
+                    <td ><button id="button9" class="border-0 bg-white">Mohamed</button></td>
+
+                    <td>Under Treatment</td>
+                    <td>Examination</td>
+                </tr>
+                <tr>
+                    <th scope="row"class="fw-bold">#10</th>
+                    <td ><button id="button10" class="border-0 bg-white">Mohamed</button></td>
+
+                    <td>Under Treatment</td>
+                    <td>Examination</td>
+                </tr>
+  
+              </tbody>
+              
+  
+              
+              </table>
+          </div>
+          
+          
+         
+       </div> 
+
+    </div>
+    </div>
+    <!-- END SCHEDULE-SECTION -->
+    <!-- START FOOTER -->
+    <footer>
+      <div class="container  text-center text-md-start text-white ">
+          <div class="row">
+              <div class=" col-md-6 col-lg-5 ">
+                  <div class="logo d-flex">
+                      <i class="fa-solid fa-stethoscope icon pe-4"></i>
+                  <h3>MediTech</h3>
+                  </div>
+
+              </div>
+              <div class="col-md-6 col-lg-2">
+                  <div class="links">
+                      <h5>Company</h5>
+                      <ul class="list-unstyled lh-lg">
+                          <li>About</li>
+                          <li>Contact Us</li>
+                          <li>Where to find us?</li>
+                          
+                      </ul>
+                  </div>
+
+
+              </div>
+              <div class="col-md-6 col-lg-3">
+                  <div class="links">
+                      <h5>Categories</h5>
+                      <ul class="list-unstyled lh-lg">
+                          <li>Join us as a doctor</li>
+                          <li>Pricing</li>
+                          
+                      </ul>
+                  </div>
+
+
+              </div>
+              <div class="col-md-6 col-lg-2">
+                  <div class="links">
+                      <ul class="list-unstyled lh-lg">
+                          <li>Downloads</li>
+                          <li>Our Doctors</li>
+                          <li>Patients Reviews</li>
+                          
+                      </ul>
+                  </div>
+
+
+              </div>
+          </div>
+          <hr>
+          <div class="row  d-flex  text-white">
+              <div class="social col-lg-9  ps-5">
+                  <i class="fa-brands fa-whatsapp pe-3 "></i>
+                  <i class="fa-brands fa-facebook-f "></i>
+              </div>
+              <div class="links-right col-lg-3 ">
+                  <ul class="list-unstyled lh-lg d-flex ">
+                      <li class="pe-3">privacy policy</li>
+                      
+                      <li>Terms and Conditions</li>
+                      
+                      
+                  </ul>
+              </div>
+          </div>
+          
+      </div>
+  </footer>
+    <!-- END FOOTER -->
+   
+   
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <script>
+      $( function() {
+      $( "#tabs" ).tabs();
+      } );
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
